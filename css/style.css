@@ -3,21 +3,47 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 1px dashed red
 }
 
 /* fonts */
-.nerko-one-regular {
-  font-family: "Nerko One", cursive;
-  font-weight: 400;
-  font-style: normal;
+body {
+	font-family: Montserrat, 'Helvetica Neue', sans-serif;
 }
 
 /* general */
-
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
 /* header */
+.topbar {
+	height: 70px;
+	padding: 0 20px;
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo {
+	color: #FF9614;
+	font-size: 3em;
+	text-decoration: none;
+	font-family: 'Nerko One', cursive;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px #BDB3A8;
+}
 
 /* main */
 
 /* footer */
 
-/* responsive */
+/* responsive tablet */
+@media screen and (min-width: 768px) {
+    .topbar {
+        justify-content: flex-start;
+        font-size: 1rem;
+    }
+}
+/* responsive desktop */
