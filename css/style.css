@@ -59,9 +59,6 @@ ul {
 	margin-bottom: 20px;
     padding: 10px;
 }
-.recipe-title {
-
-}
 .recipe-category {
     color: #999999;
     padding-block: 4px;
@@ -96,8 +93,30 @@ ul {
 	display: none;
 }
 
-/* preparazione */
+/* banner */
+.banner {
+    width: 100%;
+    height: auto;
+    display: none;
+}
 
+/* preparazione */
+.presentation {
+	margin: 20px 0;
+    padding: 20px;
+}
+.presentazion-image {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.line {
+    border: 1px solid #F6972E;
+    width: 15%;
+    margin-block: 10px;
+}
 /* footer */
 
 /* responsive tablet */
@@ -137,6 +156,18 @@ ul {
     .social-networks {
         padding-inline: 35px;
     }
+    .banner {
+        display: block;
+        padding-inline: 35px;
+    } 
+    .presentation {
+        padding-inline: 35px;
+    }
+    .presentazion-image {
+        width: 50%;
+        float: left;
+    }
+
 }
 /* responsive desktop */
 @media screen and (min-width: 992px) {
