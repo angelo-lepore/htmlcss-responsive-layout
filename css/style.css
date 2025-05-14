@@ -33,6 +33,10 @@ ul {
 	background-color: #FFFFFF;
     box-shadow: 1px 1px 1px #BDB3A8;
 }
+footer {
+    background-color: #7B68A3;
+}
+
 /* header */
 .topbar {
 	height: 70px;
@@ -118,7 +122,26 @@ ul {
     margin-block: 10px;
 }
 /* footer */
-
+.container-footer {
+    max-width: 480px;
+    margin: 0 auto;
+    height: 106px;
+}
+.footer-address {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 10px;
+    padding: 10px;
+}
+.footer {
+    display: flex;
+	justify-content: space-between;
+    padding: 22px;
+}
+footer ul li a {
+    color: #FFFFFF;
+    font-size: 10px;
+}
 /* responsive tablet */
 @media screen and (min-width: 768px) {
     .topbar {
