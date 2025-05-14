@@ -13,8 +13,14 @@ body {
 
 /* general */
 .container {
-    max-width: 1080px;
+    max-width: 480px;
     margin: 0 auto;
+}
+main {
+    background-color: #F6F5F3;
+}
+ul {
+    list-style: none;
 }
 /* header */
 .topbar {
@@ -37,6 +43,41 @@ body {
 
 /* main */
 
+/* ricetta */
+.recipe {
+	margin-bottom: 20px;
+    padding: 10px;
+}
+.recipe-title {
+
+}
+.recipe-category {
+    color: #999999;
+    padding-block: 4px;
+}
+.recipe-name {
+    color: #4E3869;
+    padding-block-end: 8px;
+}
+.recipe-origin {
+    display: none;
+}
+.recipe-image {
+    width: 100%;
+    height: auto;
+}
+.quick-notes {
+    background-color: #FFFFFF;
+    padding: 25px;
+    box-shadow: 1px 1px 1px #BDB3A8;
+}
+.quick-notes-list {
+    margin-block: 13px;
+}
+/* social */
+
+/* preparazione */
+
 /* footer */
 
 /* responsive tablet */
@@ -45,5 +86,52 @@ body {
         justify-content: flex-start;
         font-size: 1rem;
     }
+    .container {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+    .recipe {
+        padding: 35px;
+    }
+    .recipe-category {
+        font-size: 14px;
+    }
+    .recipe-origin {
+        display: inline-block;
+        font-size: 30px;
+    }
+    .recipe-name {
+        font-size: 30px;
+    }
+    .quick-notes ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .quick-notes li {
+        width: calc(100% / 3);
+    }
 }
 /* responsive desktop */
+@media screen and (min-width: 992px) {
+    #topbar {
+        font-size: 1.2rem;
+    }
+    .recipe-category {
+        font-size: 8px;
+    }
+    .recipe-origin {
+        font-size: 30px;
+    }
+    .recipe-name {
+        font-size: 30px;
+    }
+    .recipe-image {
+        width: 70%;
+        display: flex;
+        flex: 2;
+    }
+    .quick-notes li{
+        width: 100%;
+        margin-block: 0;
+    }
+}    
